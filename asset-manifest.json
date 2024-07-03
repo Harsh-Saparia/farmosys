@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/farmosys/static/css/main.7c5763a8.css",
-    "main.js": "/farmosys/static/js/main.998a16c7.js",
+    "main.js": "/farmosys/static/js/main.d0fc1e60.js",
     "static/js/453.fb2049ef.chunk.js": "/farmosys/static/js/453.fb2049ef.chunk.js",
     "static/media/cows_thumbnail.jpg": "/farmosys/static/media/cows_thumbnail.635a328406ce85c49640.jpg",
     "static/media/fs-250.png": "/farmosys/static/media/fs-250.1c8ff5c337c3b61c5389.png",
@@ -14,11 +14,11 @@
     "static/media/future.png": "/farmosys/static/media/future.7c3f894b87244345d81f.png",
     "index.html": "/farmosys/index.html",
     "main.7c5763a8.css.map": "/farmosys/static/css/main.7c5763a8.css.map",
-    "main.998a16c7.js.map": "/farmosys/static/js/main.998a16c7.js.map",
+    "main.d0fc1e60.js.map": "/farmosys/static/js/main.d0fc1e60.js.map",
     "453.fb2049ef.chunk.js.map": "/farmosys/static/js/453.fb2049ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c5763a8.css",
-    "static/js/main.998a16c7.js"
+    "static/js/main.d0fc1e60.js"
   ]
 }
