@@ -1,0 +1,95 @@
+.machines-page {
+    margin-top: 88px;
+    width: 100%;
+    padding: 32px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eceff3;
+    color: rgb(43, 43, 43);
+    h2 {
+        width: 90%;
+        font-size: 1.7rem;
+        padding-bottom: 32px;
+        color: #003e29;
+    }
+    &__machines {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+        background-color: rgb(252, 255, 254);
+        .divider {
+            width: auto;
+            margin: 0px 32px;
+            height: 1px;
+            background-color: #dee1e6;
+        }
+        &-card {
+            display: flex;
+            width: 100%;
+            padding: 32px;
+            gap: 32px;
+            &-img-container {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                // background: rgb(96, 235, 193);
+                // background: radial-gradient(
+                //     circle,
+                //     rgb(193, 255, 236) 0%,
+                //     rgba(148, 187, 233, 0) 50%
+                // );
+                background-color: rgba(229, 246, 238, 0.396);
+                // border-radius: 32px;
+                img {
+                    width: 60%;
+                }
+            }
+            &-img-container,
+            &-features {
+                h3 {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    color: #0f8f14;
+                }
+            }
+            &-features {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                color: #457162;
+                &-feature {
+                    width: 100%;
+                    display: flex;
+                    gap: 12px;
+                    &-name {
+                        width: 40%;
+                        flex-wrap: wrap;
+                        font-weight: 500;
+                    }
+                    &-value {
+                        width: 50%;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .machines-page {
+        padding: 12px;
+        &__machines {
+            &-card {
+                flex-direction: column;
+            }
+        }
+    }
+}
