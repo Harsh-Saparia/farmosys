@@ -12,10 +12,10 @@ const Footer = () => {
                     <h2>Milking Products</h2>
                     <ul>
                         <li>
-                            <a href='/milking-machines'>Milking Machines</a>
+                            <a href='/farmosys/milking-machines'>Milking Machines</a>
                         </li>
                         <li>
-                            <a href='/milking-machines'>
+                            <a href='/farmosys/milking-machines'>
                                 Milking Machines Parts
                             </a>
                         </li>

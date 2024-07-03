@@ -11,7 +11,7 @@ const Wrapper = () => {
         <header className='header'>
             <nav className='nav container'>
                 <div className='nav__data'>
-                    <a href='/' className='nav__logo'>
+                    <a href='/farmosys' className='nav__logo'>
                         <img src={logo} alt='farmosys' width={200} />
                     </a>
                     <div
@@ -31,7 +31,7 @@ const Wrapper = () => {
                         <li>
                             <div
                                 className='nav__link'
-                                onClick={() => navigate('/')}
+                                onClick={() => navigate('/farmosys')}
                             >
                                 Home
                             </div>
@@ -47,7 +47,7 @@ const Wrapper = () => {
                                     <div
                                         className='dropdown__link'
                                         onClick={() =>
-                                            navigate('/milking-machines')
+                                            navigate('/farmosys/milking-machines')
                                         }
                                     >
                                         <i className='ri-pie-chart-line'></i>{' '}
@@ -56,7 +56,7 @@ const Wrapper = () => {
                                 </li>
 
                                 <li>
-                                    <a href='#' className='dropdown__link'>
+                                    <a href='/farmosys' className='dropdown__link'>
                                         <i className='ri-arrow-up-down-line'></i>{' '}
                                         Milking Machine parts
                                     </a>
@@ -72,7 +72,7 @@ const Wrapper = () => {
                             <div
                                 className='nav__link'
                                 onClick={() =>
-                                    navigate('/contact-us')
+                                    navigate('/farmosys/contact-us')
                                 }
                             >
                                 Contact

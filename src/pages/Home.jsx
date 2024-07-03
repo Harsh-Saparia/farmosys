@@ -65,7 +65,7 @@ const Home = () => {
                         cutting-edge milking machines.
                     </h3>
                     <br />
-                <button className={`${cssPrefix}__thumbnail-button`} onClick={()=>{navigate("/milking-machines")}}>Milking Machines <HiArrowSmRight fontSize={25}/></button>
+                <button className={`${cssPrefix}__thumbnail-button`} onClick={()=>{navigate("/farmosys/milking-machines")}}>Milking Machines <HiArrowSmRight fontSize={25}/></button>
                 </div>
             </div>
             <div className={`${cssPrefix}__commitment`}>
@@ -154,7 +154,7 @@ const Home = () => {
                 Ready to Conduct Your Dairy Symphony? Let's Elevate Your Farming
                 Experience.
             </h3>
-            <button className={`${cssPrefix}__dark-button`} onClick={()=>{navigate("/contact-us")}}>Contact Us <HiArrowSmRight fontSize={25}/></button>
+            <button className={`${cssPrefix}__dark-button`} onClick={()=>{navigate("/farmosys/contact-us")}}>Contact Us <HiArrowSmRight fontSize={25}/></button>
         </>
     );
 };

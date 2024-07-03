@@ -7,9 +7,9 @@ import Contact from './pages/Contact/Contact';
 const Routers = () => {
     return (
         <Routes>
-            <Route path='/' element={<Home />}></Route>
-            <Route path='/milking-machines' element={<MilkingMachines />} />
-            <Route path='/contact-us' element={<Contact />} />
+            <Route path='/farmosys' element={<Home />}></Route>
+            <Route path='/farmosys/milking-machines' element={<MilkingMachines />} />
+            <Route path='/farmosys/contact-us' element={<Contact />} />
             <Route path='*' element={<p>No page found</p>} />
         </Routes>
     );
