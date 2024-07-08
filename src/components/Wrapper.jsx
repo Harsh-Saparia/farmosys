@@ -1,65 +1,77 @@
-import React, { useState } from 'react';
-import { FaBars, FaX, FaAngleDown } from 'react-icons/fa6';
-import { useNavigate } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
-import './Wrapper.scss';
+import React, { useState } from "react";
+import { FaBars, FaX, FaAngleDown } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
+import logo from "../assets/images/logo.png";
+import "./Wrapper.scss";
 
 const Wrapper = () => {
     const [showMenuIcon, setShowMenuIcon] = useState(false);
     const navigate = useNavigate();
     return (
-        <header className='header'>
-            <nav className='nav container'>
-                <div className='nav__data'>
-                    <a href='/farmosys' className='nav__logo'>
-                        <img src={logo} alt='farmosys' width={200} />
-                    </a>
+        <header className="header">
+            <nav className="nav container">
+                <div className="nav__data">
                     <div
-                        className={showMenuIcon ? 'show-icon' : 'nav__toggle'}
-                        id='nav-toggle'
+                        onClick={() => navigate("/farmosys")}
+                        className="nav__logo"
+                    >
+                        <img src={logo} alt="farmosys" width={200} />
+                    </div>
+                    <div
+                        className={showMenuIcon ? "show-icon" : "nav__toggle"}
+                        id="nav-toggle"
                         onClick={() => setShowMenuIcon((prev) => !prev)}
                     >
-                        <FaBars className='ri-menu-line nav__burger' />
-                        <FaX className='ri-close-line nav__close' />
+                        <FaBars className="ri-menu-line nav__burger" />
+                        <FaX className="ri-close-line nav__close" />
                     </div>
                 </div>
                 <div
-                    className={showMenuIcon ? 'show-menu' : 'nav__menu'}
-                    id='nav-menu'
+                    className={showMenuIcon ? "show-menu" : "nav__menu"}
+                    id="nav-menu"
                 >
-                    <ul className='nav__list'>
+                    <ul className="nav__list">
                         <li>
                             <div
-                                className='nav__link'
-                                onClick={() => navigate('/farmosys')}
+                                className="nav__link"
+                                onClick={() => navigate("/farmosys")}
                             >
                                 Home
                             </div>
                         </li>
-                        <li className='dropdown__item'>
-                            <div className='nav__link'>
+                        <li className="dropdown__item">
+                            <div className="nav__link">
                                 Milking Products
-                                <FaAngleDown className='ri-arrow-down-s-line dropdown__arrow' />
+                                <FaAngleDown className="ri-arrow-down-s-line dropdown__arrow" />
                             </div>
 
-                            <ul className='dropdown__menu'>
+                            <ul className="dropdown__menu">
                                 <li>
                                     <div
-                                        className='dropdown__link'
+                                        className="dropdown__link"
                                         onClick={() =>
-                                            navigate('/farmosys/milking-machines')
+                                            navigate(
+                                                "/farmosys/milking-machines"
+                                            )
                                         }
                                     >
-                                        <i className='ri-pie-chart-line'></i>{' '}
+                                        <i className="ri-pie-chart-line"></i>{" "}
                                         Milking Machines
                                     </div>
                                 </li>
 
                                 <li>
-                                    <a href='/farmosys' className='dropdown__link'>
-                                        <i className='ri-arrow-up-down-line'></i>{' '}
+                                    <div
+                                        onClick={() =>
+                                            navigate(
+                                                "/farmosys/milking-machines"
+                                            )
+                                        }
+                                        className="dropdown__link"
+                                    >
+                                        <i className="ri-arrow-up-down-line"></i>{" "}
                                         Milking Machine parts
-                                    </a>
+                                    </div>
                                 </li>
                             </ul>
                         </li>
@@ -70,10 +82,8 @@ const Wrapper = () => {
                         </li> */}
                         <li>
                             <div
-                                className='nav__link'
-                                onClick={() =>
-                                    navigate('/farmosys/contact-us')
-                                }
+                                className="nav__link"
+                                onClick={() => navigate("/farmosys/contact-us")}
                             >
                                 Contact
                             </div>

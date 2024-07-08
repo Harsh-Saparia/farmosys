@@ -93,7 +93,7 @@ const MilkingMachines = () => {
                             <div
                                 className={`${cssPrefix}__machines-card-img-container`}
                             >
-                                <img src={mach.image} alt={mach.productName} />
+                                <img src={fs250} alt={mach.productName} />
                             </div>
                             <div
                                 className={`${cssPrefix}__machines-card-features`}

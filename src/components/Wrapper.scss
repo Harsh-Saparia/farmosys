@@ -74,6 +74,7 @@ a {
     column-gap: 0.25rem;
     font-weight: $font-semi-bold;
     font-size: 2rem;
+    cursor: pointer;
     /* Color highlighting when pressed on mobile devices */
     /*-webkit-tap-highlight-color: transparent;*/
 }
@@ -382,6 +383,13 @@ a {
             }
             svg{
                 cursor: pointer;
+            }
+            div {
+                cursor: pointer;
+                color: rgb(23, 23, 23);
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

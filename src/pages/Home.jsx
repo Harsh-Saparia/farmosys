@@ -1,60 +1,60 @@
-import React from 'react';
-import { MdPrecisionManufacturing } from 'react-icons/md';
-import { TbSettingsCheck } from 'react-icons/tb';
-import { FaRegStar } from 'react-icons/fa';
-import cowsThumbnail from '../assets/images/cows_thumbnail.jpg';
-import efficiency from '../assets/images/efficiency.png';
-import clock from '../assets/images/clock.png';
-import cow from '../assets/images/cow.png';
-import precision from '../assets/images/precision.png';
-import future from '../assets/images/future.png';
-import cowResearch from '../assets/images/cow1.png';
-import './Home.scss';
-import { HiArrowSmRight } from 'react-icons/hi';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { MdPrecisionManufacturing } from "react-icons/md";
+import { TbSettingsCheck } from "react-icons/tb";
+import { FaRegStar } from "react-icons/fa";
+import cowsThumbnail from "../assets/images/cows_thumbnail.jpg";
+import efficiency from "../assets/images/efficiency.png";
+import clock from "../assets/images/clock.png";
+import cow from "../assets/images/cow.png";
+import precision from "../assets/images/precision.png";
+import future from "../assets/images/future.png";
+import cowResearch from "../assets/images/cow1.png";
+import "./Home.scss";
+import { HiArrowSmRight } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
-const cssPrefix = 'home-page';
+const cssPrefix = "home-page";
 const Home = () => {
     const points = [
         {
-            title: 'Symphony of Efficiency',
+            title: "Symphony of Efficiency",
             description:
-                'Imagine your dairy farm as a symphony, and our milking machines as the conductor. Witness the harmony of efficiency as every udder is gently and precisely milked, creating a rhythm of productivity that resonates across your farm.',
+                "Imagine your dairy farm as a symphony, and our milking machines as the conductor. Witness the harmony of efficiency as every udder is gently and precisely milked, creating a rhythm of productivity that resonates across your farm.",
             icon: efficiency,
         },
         {
-            title: 'Time, Your Most Precious Resource',
+            title: "Time, Your Most Precious Resource",
             description:
                 "In the world of dairy farming, time is a scarce resource. Our milking machines aren't just tools; they're time liberators. Reclaim your time to focus on what truly matters - nurturing your herd, refining your craft, and savoring the moments that make farming a lifestyle.",
             icon: clock,
         },
         {
-            title: 'Happy Cows, Quality Milk',
+            title: "Happy Cows, Quality Milk",
             description:
                 "A contented cow produces the finest milk. Our machines go beyond milking; they ensure the comfort and well-being of your herd. Happy cows, in turn, yield high-quality milk - the cornerstone of your farm's reputation.",
             icon: cow,
         },
         {
-            title: 'Precision Meets Passion',
+            title: "Precision Meets Passion",
             description:
-                'In the art of dairy farming, precision is paramount. Our milking machines embody the marriage of technology and passion. Every drop of milk is a testament to the meticulous care we invest in crafting machines that elevate your farming experience.',
+                "In the art of dairy farming, precision is paramount. Our milking machines embody the marriage of technology and passion. Every drop of milk is a testament to the meticulous care we invest in crafting machines that elevate your farming experience.",
             icon: precision,
         },
         {
-            title: 'Future-Forward Farming',
+            title: "Future-Forward Farming",
             description:
                 "Step into the future of farming with Farmosys. Our milking machines aren't just a purchase; they're an investment in the sustainability and longevity of your farm. Embrace innovation that propels your farm into a new era of prosperity.",
             icon: future,
         },
     ];
-    const navigate=useNavigate();
+    const navigate = useNavigate();
     return (
         <>
             <div className={`${cssPrefix}__thumbnail`}>
                 <img
                     src={cowsThumbnail}
                     className={`${cssPrefix}__thumbnail-banner`}
-                    alt='Farmosys'
+                    alt="Farmosys"
                 />
                 <div className={`${cssPrefix}__thumbnail-tagline`}>
                     <h1>Welcome to Farmosys: Innovating Dairy Farming</h1>
@@ -65,27 +65,34 @@ const Home = () => {
                         cutting-edge milking machines.
                     </h3>
                     <br />
-                <button className={`${cssPrefix}__thumbnail-button`} onClick={()=>{navigate("/farmosys/milking-machines")}}>Milking Machines <HiArrowSmRight fontSize={25}/></button>
+                    <button
+                        className={`${cssPrefix}__thumbnail-button`}
+                        onClick={() => {
+                            navigate("/farmosys/milking-machines");
+                        }}
+                    >
+                        Milking Machines <HiArrowSmRight fontSize={25} />
+                    </button>
                 </div>
             </div>
             <div className={`${cssPrefix}__commitment`}>
                 <h2>Our Commitment</h2>
                 <div className={`${cssPrefix}__commitment-break`}></div>
                 <div className={`${cssPrefix}__commitment-tiles`}>
-                    <div className='tile'>
-                        <div className='icon'>
+                    <div className="tile">
+                        <div className="icon">
                             <MdPrecisionManufacturing />
                         </div>
                         <h3>Precision</h3>
                     </div>
-                    <div className='tile'>
-                        <div className='icon'>
+                    <div className="tile">
+                        <div className="icon">
                             <TbSettingsCheck />
                         </div>
                         <h3>Efficiency</h3>
                     </div>
-                    <div className='tile'>
-                        <div className='icon'>
+                    <div className="tile">
+                        <div className="icon">
                             <FaRegStar />
                         </div>
                         <h3>Excellence</h3>
@@ -105,17 +112,26 @@ const Home = () => {
                         key={point.title}
                         style={{
                             flexDirection:
-                                ind % 2 === 0 ? 'row' : 'row-reverse',
+                                ind % 2 === 0 ? "row" : "row-reverse",
                         }}
                     >
                         <div
                             className={`${cssPrefix}__influence-point-img-container`}
                         >
-                            <img src={point.icon} alt='product' />
+                            <img src={point.icon} alt="product" />
                         </div>
-                        <div className={`${cssPrefix}__influence-point-text`} style={{borderRadius: `${ind%2 === 0 ? "4px 100px 100px 4px": "100px 4px 4px 100px"}`}}>
-                            <h3 className='title'>{point.title}</h3>
-                            <p className='description'>{point.description}</p>
+                        <div
+                            className={`${cssPrefix}__influence-point-text`}
+                            style={{
+                                borderRadius: `${
+                                    ind % 2 === 0
+                                        ? "4px 100px 100px 4px"
+                                        : "100px 4px 4px 100px"
+                                }`,
+                            }}
+                        >
+                            <h3 className="title">{point.title}</h3>
+                            <p className="description">{point.description}</p>
                         </div>
                     </div>
                 ))}
@@ -137,7 +153,7 @@ const Home = () => {
                     <div
                         className={`${cssPrefix}__products-names-p-icon-container`}
                     >
-                        <img src={cowResearch} alt='product' />
+                        <img src={cowResearch} alt="product" />
                     </div>
                     <h4 className={`${cssPrefix}__products-names-p-content`}>
                         With FARMOSYS milking machines,You no longer need to pay
@@ -154,7 +170,14 @@ const Home = () => {
                 Ready to Conduct Your Dairy Symphony? Let's Elevate Your Farming
                 Experience.
             </h3>
-            <button className={`${cssPrefix}__dark-button`} onClick={()=>{navigate("/farmosys/contact-us")}}>Contact Us <HiArrowSmRight fontSize={25}/></button>
+            <button
+                className={`${cssPrefix}__dark-button`}
+                onClick={() => {
+                    navigate("/farmosys/contact-us");
+                }}
+            >
+                Contact Us <HiArrowSmRight fontSize={25} />
+            </button>
         </>
     );
 };
