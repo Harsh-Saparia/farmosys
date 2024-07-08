@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/farmosys/static/css/main.7c5763a8.css",
-    "main.js": "/farmosys/static/js/main.d0fc1e60.js",
-    "static/js/453.fb2049ef.chunk.js": "/farmosys/static/js/453.fb2049ef.chunk.js",
-    "static/media/cows_thumbnail.jpg": "/farmosys/static/media/cows_thumbnail.635a328406ce85c49640.jpg",
-    "static/media/fs-250.png": "/farmosys/static/media/fs-250.1c8ff5c337c3b61c5389.png",
-    "static/media/cow1.png": "/farmosys/static/media/cow1.cc343b9432aa70fd0587.png",
-    "static/media/logo.png": "/farmosys/static/media/logo.4dfe65483d8e52fd2bb0.png",
-    "static/media/cow.png": "/farmosys/static/media/cow.6429220f2d04466b80a4.png",
-    "static/media/clock.png": "/farmosys/static/media/clock.1f45555edba66cacb536.png",
-    "static/media/efficiency.png": "/farmosys/static/media/efficiency.517150ba64f75612602c.png",
-    "static/media/precision.png": "/farmosys/static/media/precision.e4088b20ed9abffa4249.png",
-    "static/media/future.png": "/farmosys/static/media/future.7c3f894b87244345d81f.png",
-    "index.html": "/farmosys/index.html",
-    "main.7c5763a8.css.map": "/farmosys/static/css/main.7c5763a8.css.map",
-    "main.d0fc1e60.js.map": "/farmosys/static/js/main.d0fc1e60.js.map",
-    "453.fb2049ef.chunk.js.map": "/farmosys/static/js/453.fb2049ef.chunk.js.map"
+    "main.css": "./static/css/main.7c5763a8.css",
+    "main.js": "./static/js/main.c21ad937.js",
+    "static/js/453.fb2049ef.chunk.js": "./static/js/453.fb2049ef.chunk.js",
+    "static/media/cows_thumbnail.jpg": "./static/media/cows_thumbnail.635a328406ce85c49640.jpg",
+    "static/media/fs-250.png": "./static/media/fs-250.1c8ff5c337c3b61c5389.png",
+    "static/media/cow1.png": "./static/media/cow1.cc343b9432aa70fd0587.png",
+    "static/media/logo.png": "./static/media/logo.4dfe65483d8e52fd2bb0.png",
+    "static/media/cow.png": "./static/media/cow.6429220f2d04466b80a4.png",
+    "static/media/clock.png": "./static/media/clock.1f45555edba66cacb536.png",
+    "static/media/efficiency.png": "./static/media/efficiency.517150ba64f75612602c.png",
+    "static/media/precision.png": "./static/media/precision.e4088b20ed9abffa4249.png",
+    "static/media/future.png": "./static/media/future.7c3f894b87244345d81f.png",
+    "index.html": "./index.html",
+    "main.7c5763a8.css.map": "./static/css/main.7c5763a8.css.map",
+    "main.c21ad937.js.map": "./static/js/main.c21ad937.js.map",
+    "453.fb2049ef.chunk.js.map": "./static/js/453.fb2049ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c5763a8.css",
-    "static/js/main.d0fc1e60.js"
+    "static/js/main.c21ad937.js"
   ]
 }
